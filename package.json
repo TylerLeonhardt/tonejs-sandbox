@@ -1,0 +1,28 @@
+{
+  "name": "tonejs-sandbox",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "esbuild src/index.ts --bundle --outfile=out/index.js",
+    "watch": "esbuild --sourcemap --watch src/index.ts --outdir=out",
+    "serve": "esbuild src/index.ts --sourcemap --bundle --servedir=. --outdir=out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerLeonhardt/tonejs-sandbox.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TylerLeonhardt/tonejs-sandbox/issues"
+  },
+  "homepage": "https://github.com/TylerLeonhardt/tonejs-sandbox#readme",
+  "dependencies": {
+    "tone": "^14.7.77"
+  },
+  "devDependencies": {
+    "esbuild": "^0.8.56",
+    "typescript": "^4.2.3"
+  }
+}
